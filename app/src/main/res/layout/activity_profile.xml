@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:paddingBottom="10dp"
+        android:id="@+id/head">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="35dp"
+            android:text="Hello !"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="65dp"
+            android:text="Alice"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textSize="35sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/surname"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="0dp"
+            android:text="Day"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25sp"
+            android:layout_below="@+id/name">
+        </TextView>
+
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="212dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/learn"
+            android:layout_alignParentEnd="true">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:layout_below="@+id/head">
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/login_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="aliceday08@gmail.com"
+                android:fontFamily="sans-serif"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/name">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/head"
+            android:background="@drawable/login_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mycourse"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/mycourse"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="My Learning"
+                android:fontFamily="sans-serif"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/name">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/head"
+            android:background="@drawable/login_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favourite"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/acc_whishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="Wishlist"
+                android:fontFamily="sans-serif"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/name">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/head"
+            android:background="@drawable/login_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_circle"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/acc_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="Edit Profile"
+                android:fontFamily="sans-serif"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/name">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/head"
+            android:background="@drawable/login_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_help"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/acc_help"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="Help"
+                android:fontFamily="sans-serif"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/name">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/head"
+            android:background="@drawable/login_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logout"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/acc_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="Logout"
+                android:fontFamily="sans-serif"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/name">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
